@@ -1,0 +1,157 @@
+/* ===== Estilos Gerais (Desktop) ===== */
+body {
+    background-color: white; /* Cor padrão */
+}
+
+ul {
+    display: block; /* Mostra o menu no desktop */
+}
+
+#carro1, #carro2, #carro3, #carro4, #carro5, #carro6 {
+    display: block; /* Mostra os carros no desktop */
+}
+
+#p-mbl {
+    display: none; /* Oculta no desktop */
+}
+
+#img-inicio {
+    display: block; /* Mostra no desktop */
+}
+
+#img-iniciombl {
+    display: none; /* Oculta no desktop */
+}
+
+#melhores-mbl {
+    display: none; /* Oculta no desktop */
+}
+
+#veiculos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#veiculos img {
+    width: auto; /* Ajuste responsivo */
+}
+
+#borda {
+    margin: 0 auto 40px; /* Centraliza no desktop */
+}
+
+#carro1-mbl, #carro2-mbl, #carro3-mbl {
+    display: none; /* Oculta os carros de mobile no desktop */
+}
+
+/* ===== Media Query para Mobile (Máx. 600px) ===== */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(5, 6, 10); /* Cor escura no mobile */
+    }
+
+    ul {
+        display: none; /* Oculta o menu no mobile */
+    }
+
+    #carro1, #carro2, #carro3, #carro4, #carro5, #carro6 {
+        display: none; /* Oculta os carros do desktop */
+    }
+
+    #p-mbl {
+        display: flex; /* Mostra no mobile */
+        justify-content: center;
+        font-size: 30px;
+        width: 100%;
+        margin-top: -6px;
+        z-index: 1;
+        position: fixed;
+        background-color: rgb(2, 5, 14);
+        color: white;
+    }
+
+    #img-inicio {
+        display: none; /* Oculta imagem do desktop */
+    }
+
+    #img-iniciombl {
+        display: flex; /* Mostra imagem no mobile */
+        justify-content: center;
+    }
+
+    #img-iniciombl img {
+        width: 100%;
+        margin-top: 140px;
+    }
+
+    #melhores-mbl {
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        margin-top: -70px;
+        font-family: "Bebas Neue", serif;
+        margin-bottom: 140px;
+    }
+
+    #melhores-mbl mark {
+        background: none;
+        color: rgb(207, 19, 19);
+    }
+
+    #veiculos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #veiculos img {
+        width: 250px;
+    }
+
+    #mblvei p {
+        background: white;
+    }
+
+    #borda {
+        margin: -15px auto 40px;
+    }
+
+    #carro1-mbl, #carro2-mbl, #carro3-mbl {
+        display: block;
+        margin: 1%;
+        background: rgba(100, 99, 99, 0.925);
+        height: 150px;
+        font-size: 18pt;
+        color: aliceblue;
+        font-family: "Bebas Neue", serif;
+        font-weight: 500;
+        width: 250px;
+    }
+
+    #carro1-mbl:hover, #carro2-mbl:hover, #carro3-mbl:hover {
+        opacity: 0.8;
+    }
+
+    #carro1-mbl p, #carro2-mbl p, #carro3-mbl p {
+        position: relative;
+        left: 30px;
+    }
+
+    #preco {
+        background: rgb(207, 19, 19);
+        color: white;
+        text-decoration: none;
+        font-size: 17pt;
+        position: relative;
+        top: -25px;
+        padding: 6px 4px;
+        left: 45px;
+    }
+
+    hr {
+        margin-top: -18px;
+    }
+}
